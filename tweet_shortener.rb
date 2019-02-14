@@ -15,13 +15,20 @@ def dictionary
   }
 end 
 
+
+
 #dictionary.each do |k, v| tweet.gsub! (k, v) 
+
+
+
+
+
 
 =begin
 def word_substituter(tweet)
   newtweet = tweet.split.each do |word| 
     dictionary.each do |phrase, subs|
-      newtweet.map do 
+      newtweet.map! do 
         if word == phrase
           word = subs  
         end 
@@ -30,6 +37,11 @@ def word_substituter(tweet)
 newtweet.join(" ")
 end 
 =end 
+
+
+
+
+
 
 def word_substituter(tweet)
   newtweet = tweet.split 
